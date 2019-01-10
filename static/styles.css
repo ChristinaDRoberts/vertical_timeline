@@ -22,7 +22,7 @@
 .box2{
   background-color: white;
   border: 5px solid black;
-  height: 300px;
+  height: 200px;
   width: 300px;
   float: right;
   clear:both;
@@ -49,6 +49,8 @@ main{
   padding-top: 5%;
 }
 
+
+
 .box::after{
   content: " " ;
   height: 0;
@@ -58,7 +60,7 @@ main{
   border-bottom: solid 10px transparent;
   position: absolute;
     top: 10%;
-    right:-5%;
+    left:-5%;
 
 }
 
@@ -71,7 +73,7 @@ main{
   border-bottom: solid 10px transparent;
   position: absolute;
     top: 10%;
-    left:-5%;
+    right:-5%;
 
 }
 
@@ -80,5 +82,20 @@ div{
 }
 
 .box{
-  margin-left:7%;
+  margin-right:7%;
 }
+
+
+
+
+
+/*.box:hover {*/
+  /*float: right;*/
+  /*background-color: red;*/
+
+/*}*/
+
+/*.box2:hover {*/
+  /*float: left;*/
+  /*background-color: red;*/
+/*}*/
