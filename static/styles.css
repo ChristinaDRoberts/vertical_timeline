@@ -1,7 +1,7 @@
 .big-line {
   width: 10px;
   top: 0;
-  bottom:0%;
+  bottom:0;
   background-color: darkblue;
   text-align: center;
   position: absolute;
@@ -14,9 +14,6 @@
   height: 200px;
   width: 300px;
   clear: both;
-
-
-
 }
 
 .box2{
@@ -27,6 +24,7 @@
   float: right;
   clear:both;
   margin-right: 7%;
+  transition: 3s;
 
 
 }
@@ -51,7 +49,7 @@ main{
 
 
 
-.box::after{
+.position-left::after{
   content: " " ;
   height: 0;
   width: 0;
@@ -60,7 +58,7 @@ main{
   border-bottom: solid 10px transparent;
   position: absolute;
     top: 10%;
-    left:-5%;
+    right:-5%;
 
 }
 
@@ -73,7 +71,7 @@ main{
   border-bottom: solid 10px transparent;
   position: absolute;
     top: 10%;
-    right:-5%;
+    left:-5%;
 
 }
 
@@ -81,21 +79,23 @@ div{
   position: relative;
 }
 
-.box{
-  margin-right:7%;
+.position-left{
+  margin-left:7%;
+  transition: 3s;
 }
 
 
 
 
 
-/*.box:hover {*/
-  /*float: right;*/
-  /*background-color: red;*/
+.position-left:hover {
 
-/*}*/
+  background-color: red;
 
-/*.box2:hover {*/
-  /*float: left;*/
-  /*background-color: red;*/
-/*}*/
+}
+
+.position-right:hover {
+
+  background-color: red;
+}
+
