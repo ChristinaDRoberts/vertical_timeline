@@ -8,15 +8,17 @@
   left: 50%;
 }
 
-.box1{
+.left{
   background-color: white;
   border: 5px solid black;
   height: 200px;
   width: 300px;
   clear: both;
+  margin-left:7%;
+  transition: 3s;
 }
 
-.box2{
+.right{
   background-color: white;
   border: 5px solid black;
   height: 200px;
@@ -29,15 +31,13 @@
 
 }
 
-.box3 {
-  background-color: white;
-  border: 5px solid black;
-  height: 200px;
-  width: 300px;
-  clear:both;
-
-
-}
+/*.box3{*/
+  /*background-color: white;*/
+  /*border: 5px solid black;*/
+  /*height: 200px;*/
+  /*width: 300px;*/
+  /*clear:both;*/
+/*}*/
 
 main{
   max-width: 80%;
@@ -49,7 +49,7 @@ main{
 
 
 
-.position-left::after{
+.box1::after{
   content: " " ;
   height: 0;
   width: 0;
@@ -75,27 +75,46 @@ main{
 
 }
 
+
+.box3::after{
+  content: " " ;
+  height: 0;
+  width: 0;
+  border-left: solid 10px white;
+  border-top: solid 10px transparent;
+  border-bottom: solid 10px transparent;
+  position: absolute;
+    top: 10%;
+    right:-5%;
+
+}
+
 div{
   position: relative;
 }
 
-.position-left{
-  margin-left:7%;
-  transition: 3s;
-}
+/*.position-left{*/
+  /*margin-left:7%;*/
+  /*transition: 3s;*/
+/*}*/
 
 
 
 
 
-.position-left:hover {
-
-  background-color: red;
-
-}
-
-.position-right:hover {
+.left:hover {
 
   background-color: red;
+
 }
 
+.right:hover {
+
+  background-color: red;
+}
+
+/*.box1:hover {*/
+
+  /*background-color: red;*/
+
+/*}*/

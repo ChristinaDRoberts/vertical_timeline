@@ -7,11 +7,12 @@ app = Flask(__name__)
 @app.route("/")
 def index():
 
-    input = request.args.get("__")
+    input = request.args.get("position_right")
     print(input)
 
-    position_left ="left"
+    position_left = "left"
     position_right = "right"
+
     # open file for reading, 'r'
     # file is saved to variable
     index_file = open('index.html', 'r')
@@ -20,9 +21,9 @@ def index():
 
     if input:
         # add use input back into the html
-        my_html = my_html.replace({{"position_left"}},"left)
+        my_html = my_html.replace("{{position_right}}", position_left)
     else:
-        my_html = my_html.replace("{{position-right}}","right")
+        my_html = my_html.replace("{{position_left}}", position_right)
 
     # close the file out when you're done
     index_file.close()
