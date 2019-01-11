@@ -21,9 +21,13 @@ def index():
 
     if input:
         # add use input back into the html
-        my_html = my_html.replace("{{position_right}}", position_left)
+        my_html = my_html.replace("{{position_left}}", position_left)
+        my_html = my_html.replace("{{position_right}}", position_right)
     else:
+        my_html = my_html.replace("{{position_right}}", position_left)
         my_html = my_html.replace("{{position_left}}", position_right)
+
+
 
     # close the file out when you're done
     index_file.close()
