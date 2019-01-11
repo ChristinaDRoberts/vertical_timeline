@@ -10,6 +10,7 @@ def index():
     input = request.args.get("position_right")
     print(input)
 
+
     position_left = "left"
     position_right = "right"
 

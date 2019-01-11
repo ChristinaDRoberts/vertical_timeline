@@ -9,7 +9,7 @@
 }
 
 .left{
-  background-color: yellow;
+  background-color: white;
   border: 5px solid black;
   height: 200px;
   width: 300px;
@@ -19,7 +19,7 @@
 }
 
 .right{
-  background-color: blueviolet;
+  background-color: white;
   border: 5px solid black;
   height: 200px;
   width: 300px;
@@ -31,13 +31,6 @@
 
 }
 
-/*.box3{*/
-  /*background-color: white;*/
-  /*border: 5px solid black;*/
-  /*height: 200px;*/
-  /*width: 300px;*/
-  /*clear:both;*/
-/*}*/
 
 main{
   max-width: 80%;
@@ -66,7 +59,7 @@ main{
   content: " " ;
   height: 0;
   width: 0;
-  border-right: solid 10px red;
+  border-right: solid 10px white;
   border-top: solid 10px transparent;
   border-bottom: solid 10px transparent;
   position: absolute;
@@ -76,30 +69,10 @@ main{
 }
 
 
-/*.box3::after{*/
-  /*content: " " ;*/
-  /*height: 0;*/
-  /*width: 0;*/
-  /*border-left: solid 10px white;*/
-  /*border-top: solid 10px transparent;*/
-  /*border-bottom: solid 10px transparent;*/
-  /*position: absolute;*/
-    /*top: 10%;*/
-    /*right:-5%;*/
-
-/*}*/
 
 div{
   position: relative;
 }
-
-/*.left{*/
-  /*margin-left:7%;*/
-  /*transition: 3s;*/
-/*}*/
-
-
-
 
 
 .left:hover {
